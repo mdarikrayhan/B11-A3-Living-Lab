@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Assignment_03_Category_0002/c2-assets/logo.png" type="image/x-icon">
+    <title>Nature's Platter - Batch 11 Assignment 3 using Tailwind CSS</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+
+</head>
+<style type="text/tailwindcss">
+    @theme {
+    --default-font-family: "Sora", serif;
+    --color-black: #111111;
+    --color-green: #179800;
+    --color-bgmain: #EFEBE3;
+}
+.font-poppins {
+  font-family: "Poppins", serif;
+}
+.font-adlam-display {
+  font-family: "ADLaM Display", serif;
+}
+</style>
+
+<body class="text-black">
+
+    <header class="bg-gradient-to-b from-white to-bgmain">
+        <!-- Navigation -->
+        <nav class="container max-w-7xl mx-auto px-5 py-5 flex justify-between items-center gap-5 border-b-1 border-green md:border-b-0">
+            <div class="logo hidden md:block">
+                <img src="./Assignment_03_Category_0002/c2-assets/logo-header.png" alt="Nature's Platter">
+            </div>
+            <div class="logo block md:hidden">
+                <img src="./Assignment_03_Category_0002/c2-assets/logo.png" alt="Nature's Platter">
+            </div>
+            <div class="hidden md:block">
+                <ul class="flex gap-8 text-xl">
+                    <li><a class="hover:text-green cursor-pointer" href="#">Product</a></li>
+                    <li><a class="hover:text-green cursor-pointer" href="#">Services</a></li>
+                    <li><a class="hover:text-green cursor-pointer" href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="hidden space-x-5 md:block">
+                <i class="fa-solid fa-magnifying-glass text-xl cursor-pointer hover:text-green"></i>
+                <i class="fa-solid fa-cart-shopping text-xl cursor-pointer hover:text-green"></i>
+                <button
+                    class="bg-white border border-green px-5 text-xl py-1 rounded-lg cursor-pointer hover:bg-green hover:text-white">Login</button>
+                <button
+                    class="bg-green text-white border border-green px-5 text-xl py-1 rounded-lg cursor-pointer hover:bg-white hover:text-black">Register</button>
+            </div>
+            <div class="block md:hidden">
+                <i class="fa-solid fa-bars text-3xl cursor-pointer text-green hover:text-black"></i>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="container max-w-4xl text-center mx-auto pt-28 md:pt-15">
+            <div class="space-y-8">
+                <h1 class="font-semibold text-[56px]/tight px-4 animate-bounce">
+                    Freshness <span class="text-green">You Can<br>Count</span> On, Prices You’ll Love!
+                </h1>
+                <p class="text-xl px-6 animate-bounce">
+                    Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you
+                    covered every day!
+                </p>
+            </div>
+        </section>
+        <section class="container max-w-5xl mx-auto pt-10">
+            <img src="./Assignment_03_Category_0002/c2-assets/hero-vegetables.png" alt="Nature's Platter" class="w-full">
+            </div>
+        </section>
+    </header>
+
+    <main>
+
+        <!-- Service Section -->
+        <section class="container max-w-7xl mx-auto px-5 pt-10 md:pt-20">
+            <h2 class="font-semibold text-[36px] text-green">Services</h2>
+            <div class="flex flex-col md:flex-row gap-5 pt-8">
+                <div class="md:w-1/3 bg-bgmain text-center space-y-4 shadow-sm rounded-lg p-8">
+                    <img class="mx-auto bg-white p-5 rounded-full mb-6" src="./Assignment_03_Category_0002/c2-assets/service.png" alt="24/7 Services">
+                    <h3 class="font-semibold text-2xl">24/7 Services</h3>
+                    <p>
+                        Experience round-the-clock service with our dedicated team, ensuring your needs are met anytime,
+                        anywhere. We're here to provide you with the best shopping experience, 24/7.</p>
+                </div>
+                <div class="md:w-1/3 bg-bgmain text-center space-y-4 shadow-sm rounded-lg p-8">
+                    <img class="mx-auto bg-white p-5 rounded-full mb-6" src="./Assignment_03_Category_0002/c2-assets/delivery.png" alt="Fast Delivery">
+                    <h3 class="font-semibold text-2xl">Fast Delivery</h3>
+                    <p>Experience lightning-fast delivery with our reliable service, ensuring your orders reach you in
+                        no time. We prioritize your convenience and satisfaction with every delivery.</p>
+                </div>
+                <div class="md:w-1/3 bg-bgmain text-center space-y-4 shadow-sm rounded-lg p-8">
+                    <img class="mx-auto bg-white p-5 rounded-full mb-6" src="./Assignment_03_Category_0002/c2-assets/healthy.png"
+                        alt="Healthy Products">
+                    <h3 class="font-semibold text-2xl">Healthy Products</h3>
+                    <p>Explore our wide range of healthy products, carefully selected to support your well-being and
+                        lifestyle. From organic produce to wholesome snacks, we offer the best for your health.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-bgmain my-10 md:my-24">
+
+            <!-- Popular Product Section -->
+            <div class="container max-w-7xl mx-auto px-5 py-10 md:py-24">
+                <div>
+                    <h2 class="font-semibold text-[36px] text-green">Popular Products</h2>
+                </div>
+                <div class="flex flex-col md:flex-row gap-5 mt-8">
+
+                    <div
+                        class="md:w-1/3 bg-gradient-to-br from-green-600 to-bgmain px-7 pt-7 shadow rounded-lg space-y-4">
+                        <h3 class="font-adlam-display text-[32px] text-white">30% off</h3>
+                        <p>Discover our exclusive deals on fresh produce, available for a limited time.</p>
+                        <button
+                            class="bg-white border border-green px-5 text-xl py-1 rounded-lg cursor-pointer hover:bg-green hover:text-white">Buy
+                            Now
+                        </button>
+                        <img class="-mx-7 -mt-15 md:-mt-4 float-right" src="./Assignment_03_Category_0002/c2-assets/vegetable-offer.png"
+                            alt="Offer for Vegetables">
+                    </div>
+
+                    <div class="md:w-2/3 grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-5">
+
+                        <div class="flex items-center gap-2 md:gap-3 bg-white p-2.5 md:p-4 shadow rounded-lg">
+                            <div class="w-1.5/4 md:w-2/4">
+                                <img class="m-auto bg-bgmain rounded-lg p-1.5" src="./Assignment_03_Category_0002/c2-assets/onion.png"
+                                    alt="Onion 1 KG">
+                            </div>
+                            <div class="w-4/4 md:w-3/4 space-y-0.5 md:space-y-1">
+                                <p class="text-xs md:text-sm"><i class="text-yellow-500 fa-solid fa-star mr-1"></i> 4.5
+                                </p>
+                                <h3 class="text-xs font-medium md:text-xl">Onion 1 KG</h3>
+                                <p class="text-xs font-medium md:text-base">$39.99</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2 md:gap-3 bg-white p-2.5 md:p-4 shadow rounded-lg">
+                            <div class="w-1.5/4 md:w-2/4">
+                                <img class="m-auto bg-bgmain rounded-lg p-1.5" src="./Assignment_03_Category_0002/c2-assets/tomato.png"
+                                    alt="Tomato 1 KG">
+                            </div>
+                            <div class="w-4/4 md:w-3/4 space-y-0.5 md:space-y-1">
+                                <p class="text-xs md:text-sm"><i class="text-yellow-500 fa-solid fa-star mr-1"></i> 4.5
+                                </p>
+                                <h3 class="text-xs font-medium md:text-xl">Tomato 1 KG</h3>
+                                <p class="text-xs font-medium md:text-base">$39.99</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2 md:gap-3 bg-white p-2.5 md:p-4 shadow rounded-lg">
+                            <div class="w-1.5/4 md:w-2/4">
+                                <img class="m-auto bg-bgmain rounded-lg p-1.5" src="./Assignment_03_Category_0002/c2-assets/potato.png"
+                                    alt="Potato 1 KG">
+                            </div>
+                            <div class="w-4/4 md:w-3/4 space-y-0.5 md:space-y-1">
+                                <p class="text-xs md:text-sm"><i class="text-yellow-500 fa-solid fa-star mr-1"></i> 4.5
+                                </p>
+                                <h3 class="text-xs font-medium md:text-xl">Potato 1 KG</h3>
+                                <p class="text-xs font-medium md:text-base">$39.99</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2 md:gap-3 bg-white p-2.5 md:p-4 shadow rounded-lg">
+                            <div class="w-1.5/4 md:w-2/4">
+                                <img class="m-auto bg-bgmain rounded-lg p-1.5" src="./Assignment_03_Category_0002/c2-assets/onion.png"
+                                    alt="Onion 1 KG">
+                            </div>
+                            <div class="w-4/4 md:w-3/4 space-y-0.5 md:space-y-1">
+                                <p class="text-xs md:text-sm"><i class="text-yellow-500 fa-solid fa-star mr-1"></i> 4.5
+                                </p>
+                                <h3 class="text-xs font-medium md:text-xl">Onion 1 KG</h3>
+                                <p class="text-xs font-medium md:text-base">$39.99</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2 md:gap-3 bg-white p-2.5 md:p-4 shadow rounded-lg">
+                            <div class="w-1.5/4 md:w-2/4">
+                                <img class="m-auto bg-bgmain rounded-lg p-1.5" src="./Assignment_03_Category_0002/c2-assets/tomato.png"
+                                    alt="Tomato 1 KG">
+                            </div>
+                            <div class="w-4/4 md:w-3/4 space-y-0.5 md:space-y-1">
+                                <p class="text-xs md:text-sm"><i class="text-yellow-500 fa-solid fa-star mr-1"></i> 4.5
+                                </p>
+                                <h3 class="text-xs font-medium md:text-xl">Tomato 1 KG</h3>
+                                <p class="text-xs font-medium md:text-base">$39.99</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2 md:gap-3 bg-white p-2.5 md:p-4 shadow rounded-lg">
+                            <div class="w-1.5/4 md:w-2/4">
+                                <img class="m-auto bg-bgmain rounded-lg p-1.5" src="./Assignment_03_Category_0002/c2-assets/potato.png"
+                                    alt="Potato 1 KG">
+                            </div>
+                            <div class="w-4/4 md:w-3/4 space-y-0.5 md:space-y-1">
+                                <p class="text-xs md:text-sm"><i class="text-yellow-500 fa-solid fa-star mr-1"></i> 4.5
+                                </p>
+                                <h3 class="text-xs font-medium md:text-xl">Potato 1 KG</h3>
+                                <p class="text-xs font-medium md:text-base">$39.99</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2 md:gap-3 bg-white p-2.5 md:p-4 shadow rounded-lg">
+                            <div class="w-1.5/4 md:w-2/4">
+                                <img class="m-auto bg-bgmain rounded-lg p-1.5" src="./Assignment_03_Category_0002/c2-assets/onion.png"
+                                    alt="Onion 1 KG">
+                            </div>
+                            <div class="w-4/4 md:w-3/4 space-y-0.5 md:space-y-1">
+                                <p class="text-xs md:text-sm"><i class="text-yellow-500 fa-solid fa-star mr-1"></i> 4.5
+                                </p>
+                                <h3 class="text-xs font-medium md:text-xl">Onion 1 KG</h3>
+                                <p class="text-xs font-medium md:text-base">$39.99</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2 md:gap-3 bg-white p-2.5 md:p-4 shadow rounded-lg">
+                            <div class="w-1.5/4 md:w-2/4">
+                                <img class="m-auto bg-bgmain rounded-lg p-1.5" src="./Assignment_03_Category_0002/c2-assets/tomato.png"
+                                    alt="Tomato 1 KG">
+                            </div>
+                            <div class="w-4/4 md:w-3/4 space-y-0.5 md:space-y-1">
+                                <p class="text-xs md:text-sm"><i class="text-yellow-500 fa-solid fa-star mr-1"></i> 4.5
+                                </p>
+                                <h3 class="text-xs font-medium md:text-xl">Tomato 1 KG</h3>
+                                <p class="text-xs font-medium md:text-base">$39.99</p>
+                            </div>
+                        </div>
+
+                        <div class="hidden items-center gap-2 md:gap-3 bg-white p-2.5 md:p-4 shadow rounded-lg md:flex">
+                            <div class="w-1.5/4 md:w-2/4">
+                                <img class="m-auto bg-bgmain rounded-lg p-1.5" src="./Assignment_03_Category_0002/c2-assets/potato.png"
+                                    alt="Potato 1 KG">
+                            </div>
+                            <div class="w-4/4 md:w-3/4 space-y-0.5 md:space-y-1">
+                                <p class="text-xs md:text-sm"><i class="text-yellow-500 fa-solid fa-star mr-1"></i> 4.5
+                                </p>
+                                <h3 class="text-xs font-medium md:text-xl">Potato 1 KG</h3>
+                                <p class="text-xs font-medium md:text-base">$39.99</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Product Section -->
+            <div class="container max-w-7xl mx-auto px-5 pb-10 md:pb-24">
+                <h2 class="font-semibold text-[36px] text-green">New Products</h2>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5 mt-8">
+
+                    <div class="flex items-center gap-2 md:gap-3 bg-white p-2.5 md:p-4 shadow rounded-lg">
+                        <div class="w-1.5/4 md:w-2/4">
+                            <img class="m-auto bg-bgmain rounded-lg p-1 md:p-1.5" src="./Assignment_03_Category_0002/c2-assets/banana.png"
+                                alt="Banana 4 Pcs">
+                        </div>
+                        <div class="w-4/4 md:w-3/4 space-y-1 md:space-y-2">
+                            <p class="text-xs md:text-sm"><i class="text-yellow-500 fa-solid fa-star mr-1"></i> 4.7
+                            </p>
+                            <h3 class="text-xs font-medium md:text-xl">Banana 4 Pcs</h3>
+                            <p class="text-xs font-medium md:text-base">$0.99</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-2 md:gap-3 bg-white p-2.5 md:p-4 shadow rounded-lg">
+                        <div class="w-1.5/4 md:w-2/4">
+                            <img class="m-auto bg-bgmain rounded-lg p-1 md:p-1.5" src="./Assignment_03_Category_0002/c2-assets/mango.png"
+                                alt="Mango 1 KG">
+                        </div>
+                        <div class="w-4/4 md:w-3/4 space-y-1 md:space-y-2">
+                            <p class="text-xs md:text-sm"><i class="text-yellow-500 fa-solid fa-star mr-1"></i> 4.7
+                            </p>
+                            <h3 class="text-xs font-medium md:text-xl">Mango 1 KG</h3>
+                            <p class="text-xs font-medium md:text-base">$5.99</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-2 md:gap-3 bg-white p-2.5 md:p-4 shadow rounded-lg">
+                        <div class="w-1.5/4 md:w-2/4">
+                            <img class="m-auto bg-bgmain rounded-lg p-1 md:p-1.5" src="./Assignment_03_Category_0002/c2-assets/orange.png"
+                                alt="Orange 1 KG">
+                        </div>
+                        <div class="w-4/4 md:w-3/4 space-y-1 md:space-y-2">
+                            <p class="text-xs md:text-sm"><i class="text-yellow-500 fa-solid fa-star mr-1"></i> 4.5
+                            </p>
+                            <h3 class="text-xs font-medium md:text-xl">Orange 1 KG</h3>
+                            <p class="text-xs font-medium md:text-base">$15.99</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-2 md:gap-3 bg-white p-2.5 md:p-4 shadow rounded-lg">
+                        <div class="w-1.5/4 md:w-2/4">
+                            <img class="m-auto bg-bgmain rounded-lg p-1 md:p-1.5" src="./Assignment_03_Category_0002/c2-assets/lychee.png"
+                                alt="Lychee 1 KG">
+                        </div>
+                        <div class="w-4/4 md:w-3/4 space-y-1 md:space-y-2">
+                            <p class="text-xs md:text-sm"><i class="text-yellow-500 fa-solid fa-star mr-1"></i> 4.5
+                            </p>
+                            <h3 class="text-xs font-medium md:text-xl">Lychee 1 KG</h3>
+                            <p class="text-xs font-medium md:text-base">$30.99</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-2 md:gap-3 bg-white p-2.5 md:p-4 shadow rounded-lg">
+                        <div class="w-1.5/4 md:w-2/4">
+                            <img class="m-auto bg-bgmain rounded-lg p-1 md:p-1.5" src="./Assignment_03_Category_0002/c2-assets/pineapple.png"
+                                alt="Pineapple 1 Pc">
+                        </div>
+                        <div class="w-4/4 md:w-3/4 space-y-1 md:space-y-2">
+                            <p class="text-xs md:text-sm"><i class="text-yellow-500 fa-solid fa-star mr-1"></i> 4.5
+                            </p>
+                            <h3 class="text-xs font-medium md:text-xl">Pineapple</h3>
+                            <p class="text-xs font-medium md:text-base">$7.99</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-2 md:gap-3 bg-white p-2.5 md:p-4 shadow rounded-lg">
+                        <div class="w-1.5/4 md:w-2/4">
+                            <img class="m-auto bg-bgmain rounded-lg p-1 md:p-1.5" src="./Assignment_03_Category_0002/c2-assets/banana.png"
+                                alt="Banana 4 Pcs">
+                        </div>
+                        <div class="w-4/4 md:w-3/4 space-y-1 md:space-y-2">
+                            <p class="text-xs md:text-sm"><i class="text-yellow-500 fa-solid fa-star mr-1"></i> 4.7
+                            </p>
+                            <h3 class="text-xs font-medium md:text-xl">Banana 4 Pcs</h3>
+                            <p class="text-xs font-medium md:text-base">$0.99</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-2 md:gap-3 bg-white p-2.5 md:p-4 shadow rounded-lg">
+                        <div class="w-1.5/4 md:w-2/4">
+                            <img class="m-auto bg-bgmain rounded-lg p-1 md:p-1.5" src="./Assignment_03_Category_0002/c2-assets/mango.png"
+                                alt="Mango 1 KG">
+                        </div>
+                        <div class="w-4/4 md:w-3/4 space-y-1 md:space-y-2">
+                            <p class="text-xs md:text-sm"><i class="text-yellow-500 fa-solid fa-star mr-1"></i> 4.7
+                            </p>
+                            <h3 class="text-xs font-medium md:text-xl">Mango 1 KG</h3>
+                            <p class="text-xs font-medium md:text-base">$5.99</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-2 md:gap-3 bg-white p-2.5 md:p-4 shadow rounded-lg">
+                        <div class="w-1.5/4 md:w-2/4">
+                            <img class="m-auto bg-bgmain rounded-lg p-1 md:p-1.5" src="./Assignment_03_Category_0002/c2-assets/orange.png"
+                                alt="Orange 1 KG">
+                        </div>
+                        <div class="w-4/4 md:w-3/4 space-y-1 md:space-y-2">
+                            <p class="text-xs md:text-sm"><i class="text-yellow-500 fa-solid fa-star mr-1"></i> 4.5
+                            </p>
+                            <h3 class="text-xs font-medium md:text-xl">Orange 1 KG</h3>
+                            <p class="text-xs font-medium md:text-base">$15.99</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-2 md:gap-3 bg-white p-2.5 md:p-4 shadow rounded-lg">
+                        <div class="w-1.5/4 md:w-2/4">
+                            <img class="m-auto bg-bgmain rounded-lg p-1 md:p-1.5" src="./Assignment_03_Category_0002/c2-assets/lychee.png"
+                                alt="Lychee 1 KG">
+                        </div>
+                        <div class="w-4/4 md:w-3/4 space-y-1 md:space-y-2">
+                            <p class="text-xs md:text-sm"><i class="text-yellow-500 fa-solid fa-star mr-1"></i> 4.5
+                            </p>
+                            <h3 class="text-xs font-medium md:text-xl">Lychee 1 KG</h3>
+                            <p class="text-xs font-medium md:text-base">$30.99</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-2 md:gap-3 bg-white p-2.5 md:p-4 shadow rounded-lg">
+                        <div class="w-1.5/4 md:w-2/4">
+                            <img class="m-auto bg-bgmain rounded-lg p-1 md:p-1.5" src="./Assignment_03_Category_0002/c2-assets/pineapple.png"
+                                alt="Pineapple 1 Pc">
+                        </div>
+                        <div class="w-4/4 md:w-3/4 space-y-1 md:space-y-2">
+                            <p class="text-xs md:text-sm"><i class="text-yellow-500 fa-solid fa-star mr-1"></i> 4.5
+                            </p>
+                            <h3 class="text-xs font-medium md:text-xl">Pineapple</h3>
+                            <p class="text-xs font-medium md:text-base">$7.99</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-2 md:gap-3 bg-white p-2.5 md:p-4 shadow rounded-lg">
+                        <div class="w-1.5/4 md:w-2/4">
+                            <img class="m-auto bg-bgmain rounded-lg p-1 md:p-1.5" src="./Assignment_03_Category_0002/c2-assets/banana.png"
+                                alt="Banana 4 Pcs">
+                        </div>
+                        <div class="w-4/4 md:w-3/4 space-y-1 md:space-y-2">
+                            <p class="text-xs md:text-sm"><i class="text-yellow-500 fa-solid fa-star mr-1"></i> 4.7
+                            </p>
+                            <h3 class="text-xs font-medium md:text-xl">Banana 4 Pcs</h3>
+                            <p class="text-xs font-medium md:text-base">$0.99</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-2 md:gap-3 bg-white p-2.5 md:p-4 shadow rounded-lg">
+                        <div class="w-1.5/4 md:w-2/4">
+                            <img class="m-auto bg-bgmain rounded-lg p-1 md:p-1.5" src="./Assignment_03_Category_0002/c2-assets/mango.png"
+                                alt="Mango 1 KG">
+                        </div>
+                        <div class="w-4/4 md:w-3/4 space-y-1 md:space-y-2">
+                            <p class="text-xs md:text-sm"><i class="text-yellow-500 fa-solid fa-star mr-1"></i> 4.7
+                            </p>
+                            <h3 class="text-xs font-medium md:text-xl">Mango 1 KG</h3>
+                            <p class="text-xs font-medium md:text-base">$5.99</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Arrival & Offers Section -->
+        <section class="container max-w-7xl px-5 mx-auto my-10 md:mt-24 mb-[350px]">
+            <h2 class="font-semibold text-[36px] text-green">Arrival & Offers</h2>
+            <div class="flex flex-col md:flex-row gap-5 pt-8">
+                <div class="md:w-3/5 bg-[#115414] flex justify-between p-4 pr-0 md:pl-10 md:pr-5 md:pb-0 gap-2 md:gap-5 md:pt-7 rounded-xl shadow">
+                    <div class="w-1/2 md:w-3/5 space-y-4 md:space-y-6 mt-1">
+                        <img src="./Assignment_03_Category_0002/c2-assets/dawat-logo.png" alt="">
+                        <button
+                            class="bg-green-700 font-poppins text-xs md:text-2xl text-white px-5 py-2 rounded-lg cursor-pointer hover:bg-green-800">Cook Exotic Dishes</button>
+                        <p class="font-poppins text-[22px]/none md:text-[40px]/none text-white">UP to <span class="font-bold">20% OFF</span></p>
+                    </div>
+                    <div class="w-1/2 md:w-2/5 md:mt-4">
+                        <img src="./Assignment_03_Category_0002/c2-assets/dawat-mock-up.png" alt="">
+                    </div>
+                </div>
+
+                <div class="md:w-2/5 bg-[#102861] flex justify-between pl-4 pr-4 pt-4 pb-1.5 md:px-5 gap-2 md:pt-7 rounded-xl shadow">
+                    <div class="w-4/4 md:w-2/3 space-y-3.5 md:space-y-6">
+                        <img src="./Assignment_03_Category_0002/c2-assets/india-gate-logo.png" alt="" class="w-16 h-14 md:h-20">
+                        <button
+                            class="bg-[#2A4D97] font-poppins text-xs md:text-2xl text-white px-5 py-2 rounded-lg cursor-pointer hover:bg-[#213d7a]">World’s
+                            No.1 Rice</button>
+                        <p class="font-poppins text-[22px]/none md:text-[40px]/none text-white">UP to <span class="font-bold">40% OFF</span></p>
+                    </div>
+                    <div class="w-2/5 md:w-1/3 mt-2">
+                        <img alt="" src="./Assignment_03_Category_0002/c2-assets/india-gate-mock-up.png">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-green relative">
+
+        <!-- Newsletter Section -->
+        <section class="container max-w-7xl mx-auto px-5 absolute left-1/2 -translate-x-2/4 -translate-y-2/4 -mt-1.5">
+            <div
+                class="bg-bgmain px-10 py-10 rounded-xl shadow-lg flex justify-center items-center flex-col md:flex-row gap-7 text-center md:text-left">
+                <div class="md:w-1/2">
+                    <img class="mx-auto" src="./Assignment_03_Category_0002/c2-assets/vegetable-busket.png" alt="Vegetables Basket">
+                </div>
+                <div class="md:w-1/2 space-y-7">
+                    <h2 class="font-bold text-[22px]/none text-green md:font-semibold md:text-[36px] md:text-black">Get Grocery
+                        News!</h2>
+                    <p>Exclusive training tips, ticks, product deals and more.</p>
+                    <div>
+                        <input type="email" placeholder="Enter email...."
+                            class="bg-white px-5 py-4 rounded-lg w-full md:w-5/6 text-sm border border-white hover:border-green focus:border-green outline-none">
+                    </div>
+                    <div>
+                        <button
+                            class="bg-green text-white border border-green px-7 text-xl py-1 rounded-lg cursor-pointer hover:bg-white hover:text-black">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <section class="container max-w-7xl mx-auto px-5 py-20 flex flex-col justify-between md:items-end md:flex-row gap-10 md:gap-40 text-bgmain pt-[330px] pb-30">
+            <div class="md:w-2.5/3 md:text-xl">
+                <img src="./Assignment_03_Category_0002/c2-assets/logo-footer.png" alt="Nature's Platter">
+                <p class="text-[#ffffffa1] pt-5">Nature's Platter is a leading online grocery store, offering a wide range of
+                    products at best prices. We are committed to providing best service.</p>
+            </div>
+            <div class="md:w-2/5 space-y-5 md:text-xl">
+                <div><a class="hover:text-white" href="#">Product</a></div>
+                <div><a class="hover:text-white" href="">Services</a></div>
+                <div><a class="hover:text-white" href="">Contact Us</a></div>
+            </div>
+            <div class="md:w-1/4 md:ml-10">
+                <div class="flex flex-col justify-end gap-5">
+                    <div>Follow Us</div>
+                    <div class="flex gap-8">
+                        <i class="fa-brands fa-facebook text-2xl cursor-pointer hover:text-white"></i>
+                        <i class="fa-brands fa-instagram text-2xl cursor-pointer hover:text-white"></i>
+                        <i class="fa-brands fa-linkedin text-2xl cursor-pointer hover:text-white"></i>
+                        <i class="fa-brands fa-youtube text-2xl cursor-pointer hover:text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>
